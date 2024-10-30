@@ -132,7 +132,7 @@ IF @BOOK_ID IS NOT NULL
 SELECT @sql = @sql + '	AND  BOOK_ID  = @BOOK_ID '	
 
 IF @USER_ID IS NOT NULL
-SELECT @sql = @sql + '	AND  @USER_ID  = @USER_ID '
+SELECT @sql = @sql + '	AND  USER_ID  = @USER_ID '
 
 IF @BOOK_ISBN IS NOT NULL
 SELECT @sql = @sql + '	AND  BOOK.ISBN = @BOOK_ISBN '		
